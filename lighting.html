@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!--this list is full of links leading to other parts of the website and acts as the navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+        <div class="container-fluid">
+            <img class="logo navbar-brand" src="images/logo.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html">Home</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary active" href="lighting.html">Lighting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="animation.html">Animation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="storyboard.html">Storyboards</a>
+                    </li>
+                </ul>
+                <div class="align-self-end mx-auto position-absolute top-50 end-0 translate-middle open-button contact-button"><button class="btn btn-sm btn-outline-primary py-2">Contact</button> </div>
+                
+            </div>
+            
+        </div>
+    </nav>
+    <!-- contact form here! -->
+    <div class="popup-wrapper">
+
+        <div class="popup">
+            <div class="popup-close">X</div>
+            <div class="popup-content">
+                <h2>Contact Me</h2>
+                <p>Enter your info here!</p>
+                <form class="contact-form">
+                    <input type="text" id="firstName" class="firstName border-secondary" name="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" class="lastName border-secondary" name="lastName"placeholder="Last Name" required>
+                    <br>
+                    <input type="email" id="email" class="email border-secondary" name="email" placeholder="example@email.com" required>
+                    <input type="text" id="userPhone" class="userPhone border-secondary" name="userPhone" placeholder="(+1) Phone Number">
+                    <br>
+                    <input type="submit" id="submitUser" class="submitUser btn btn-outline-primary" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </div>
+      <section>
+        <div class="flex-container px-4 top-50">
+            <p class="fw-bold d-inline-block">ANIMATOR</p>
+            <p class="fw-bold d-inline-block">ARTIST</p>
+            <p class="fw-bold d-inline-block">WRITER</p>
+        </div>
+    </section>
+
+    <main>
+        <h1 class="h1 text-decoration-underline p-4 mx-5 my-auto text-left text-primary"> Lighting </h1>
+
+        <p class="p-4 mx-5 my-auto text-left">
+            Here is a portfolio for lighting I made in Autodesk Maya using assets from cgtrader.com<br>
+            and polyhaven.com.
+            <!-- if you need to add another way of contacting, place your information followed by a <br> statement-->
+        </p>
+
+        <video controls src="videos/lightingportJAN2023.mp4" width="500" class="videos"></video>
+
+        <div class="text-center">
+            <img class="mx-auto" src="images/banner.png" alt="">
+        </div>
+    </main>
+
+
+</body>
+<!--this is code for the footer that are images that are when clicked on lead to other websites-->
+<div class="footer fixed-bottom">
+    <footer>
+        <a href="https://www.linkedin.com/in/miguel-donnelly-548661231/#experience">
+            <img border="0" src="images/linkedIn.png" width="100" height="100">
+            </a>
+
+        <a href="https://www.artstation.com/m1gula5">
+            <img border="0" src="images/artstation.png" width="100" height="100">
+            </a>
+        
+        <a href="">
+            <!--<img border="0" src="images/fiverr.png" width="100" height="100">-->
+            </a>
+    </footer>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="/sandbox.js"></script>
+</html>
